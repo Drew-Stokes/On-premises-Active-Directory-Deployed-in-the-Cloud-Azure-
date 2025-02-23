@@ -133,14 +133,30 @@ mydomain.com\jane_admin
 2. **Login to Client-1** as `labuser`.  
 3. **Join Client-1 to the domain (`mydomain.com`)**:
 - Open **System Properties** → Click **Change Settings**.  
-- Set **Domain** to `mydomain.com`.  
-- Restart **Client-1**.  
+- Set **Domain** to `mydomain.com`.
+  <p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/2b970f8b404c3cc8afafb1f4b9e9d7d5ff8fce30/join_client_to_my_domain.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+  
+- Restart **Client-1**.
+  <p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/2b970f8b404c3cc8afafb1f4b9e9d7d5ff8fce30/restart_computer.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+
 4. **Verify Client-1 in Active Directory**:
 - Log into **DC-1**.
-- Open **ADUC** → Confirm that Client-1 appears in the **Computers** section.  
+- Open **ADUC** → Confirm that Client-1 appears in the **Computers** section.
+  <p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/2b970f8b404c3cc8afafb1f4b9e9d7d5ff8fce30/verify_client_is_active_directory.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+ 
 5. **Organize Client-1 in AD**:
 - Create a new OU called `_CLIENTS`.  
-- **Move Client-1** into `_CLIENTS`.  
+- **Move Client-1** into `_CLIENTS`.
+  <p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/2b970f8b404c3cc8afafb1f4b9e9d7d5ff8fce30/organize_client.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+
 </details>
 
 ---
