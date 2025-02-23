@@ -169,15 +169,16 @@ mydomain.com\jane_admin
 
 1. Log into **Client-1** as:  
 mydomain.com\jane_admin
+<p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/6942037df8a9b2a53bc2cfeb3104a0a29f2babb2/log_into_client1_as_janeadmin(p2).png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
 
-bash
-Copy
-Edit
 2. Open **System Properties** → Click **Remote Desktop**.  
 3. Allow **domain users** to access Remote Desktop.  
-4. Now, **non-administrative users can log in remotely**.  
-5. In real-world environments, you’d configure this using **Group Policy (GPO)** for multiple machines at once.  
-</details>
+<p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/6942037df8a9b2a53bc2cfeb3104a0a29f2babb2/allow_domain_users_to_access_remote_Desktop.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+
 
 ---
 
