@@ -84,19 +84,40 @@ mydomain.com\labuser
 <summary><b>Click to Expand</b></summary>
 
 1. Open **Active Directory Users and Computers (ADUC)**.
+  <p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/6f7a2fcae1ce2396c0693e781c886de91bae3269/Active_directory_users_and_computers.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+
 2. Create an **Organizational Unit (OU)** named `_EMPLOYEES`.  
+  <p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/6f7a2fcae1ce2396c0693e781c886de91bae3269/creat_employee_ou.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+
 3. Create a **new OU** named `_ADMINS`.  
+  <p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/6f7a2fcae1ce2396c0693e781c886de91bae3269/create_admins_OU.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+
 4. Create a new employee:
 - **Full Name**: Jane Doe  
 - **Username**: `jane_admin`  
 - **Password**: `Cyberlab123!`  
+<p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/6f7a2fcae1ce2396c0693e781c886de91bae3269/create_user_jane_doe.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+
 5. Add `jane_admin` to the **Domain Admins** security group.  
-6. **Log out** and reconnect as:  
+<p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/6f7a2fcae1ce2396c0693e781c886de91bae3269/add_jane_to_admins_group.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+
+6. **Log out** and reconnect as:
 mydomain.com\jane_admin
 
-markdown
-Copy
-Edit
+<p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/6f7a2fcae1ce2396c0693e781c886de91bae3269/jane_admin_my_domain_log_in.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+
 7. Use `jane_admin` as your **admin account** from now on.  
 </details>
 
