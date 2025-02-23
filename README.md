@@ -28,6 +28,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Install Active Directory Domain Services (AD DS)
 - Create a Domain Admin User
 - Join Client-1 to the Domain
+- Configure Remote Desktop & Add Users
 - Bulk Create Users via PowerShell
 
 <h2>Deployment and Configuration Steps</h2>
