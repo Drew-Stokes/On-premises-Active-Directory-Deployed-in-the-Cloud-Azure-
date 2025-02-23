@@ -191,39 +191,52 @@ mydomain.com\jane_admin
 3. Create a **new script file** and paste the following script:  
 
 ```powershell
-# PowerShell Script to Create Users in Active Directory
-$password = ConvertTo-SecureString "UserPass123!" -AsPlainText -Force
-for ($i=1; $i -le 10; $i++) {
-    $username = "user" + $i
-    New-ADUser -Name $username -SamAccountName $username -UserPrincipalName "$username@mydomain.com" -Path "OU=_EMPLOYEES,DC=mydomain,DC=com" -AccountPassword $password -Enabled $true
+# ----- Edit these Variables for your own Use Case ----- #
+$PASSWORD_FOR_USERS   = "Password1"
+$NUMBER_OF_ACCOUNTS_TO_CREATE = 10000
+# ------------------------------------------------------ #
+
+Function generate-random-name() {
+    $consonants = @('b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z')
+    $vowels = @('a','e','i','o','u','y')
+    $nameLength = Get-Random -Minimum 3 -Maximum 7
+    $count = 0
+    $name = ""
+
+    while ($count -lt $nameLength) {
+        if ($($count % 2) -eq 0) {
+            $name += $consonants[$(Get-Random -Minimum 0 -Maximum $($consonants.Count - 1))]
+        }
+        else {
+            $name += $vowels[$(Get-Random -Minimum 0 -Maximum $($vowels.Count - 1))]
+        }
+        $count++
+    }
+
+    return $name
+
 }
-Run the script and observe user accounts being created.
-Open ADUC and verify that the users appear under _EMPLOYEES.
-Attempt to log into Client-1 with one of the new accounts:
-makefile
-Copy
-Edit
-Username: user1  
-Password: UserPass123!
-</details>
-Final Steps: Finishing the Lab
-<details> <summary><b>Click to Expand</b></summary>
-✅ Verify all configurations:
 
-Ensure Client-1 is joined to the domain.
-Confirm that jane_admin has admin privileges.
-Test Remote Desktop for a non-admin user.
-✅ Save Money in Azure:
+$count = 1
+while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
+    $fisrtName = generate-random-name
+    $lastName = generate-random-name
+    $username = $fisrtName + '.' + $lastName
+    $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
 
-Do NOT delete the VMs—we will use them for future labs.
-If you’re done for the day, STOP the VMs in the Azure Portal to avoid extra charges.
-</details>
-🎉 Lab Complete!
-You've successfully set up Active Directory, joined a workstation to the domain, enabled Remote Desktop, and bulk-created users in PowerShell! 🚀 Keep practicing to build confidence.
-
-vbnet
-Copy
-Edit
+    Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan
+    
+    New-AdUser -AccountPassword $password `
+               -GivenName $firstName `
+               -Surname $lastName `
+               -DisplayName $username `
+               -Name $username `
+               -EmployeeID $username `
+               -PasswordNeverExpires $true `
+               -Path "ou=_EMPLOYEES,$(([ADSI]`"").distinguishedName)" `
+               -Enabled $true
+    $count++
+}
 
 ---
 </p>
