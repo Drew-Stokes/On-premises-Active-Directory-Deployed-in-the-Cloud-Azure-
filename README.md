@@ -188,7 +188,14 @@ mydomain.com\jane_admin
 
 1. **Log into DC-1** as `jane_admin`.  
 2. Open **PowerShell ISE** as an **Administrator**.  
+<p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/ebc18d6c3afadcd48e63c29c558889083906976d/run_power_shell_as_administrator.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+</p>
+
 3. Create a **new script file** and paste the following script:  
+<p>
+<img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/ebc18d6c3afadcd48e63c29c558889083906976d/power_shell_script.png"/>
+</p>
 
 ```powershell
 # ----- Edit these Variables for your own Use Case ----- #
