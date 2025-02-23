@@ -53,15 +53,28 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 1. **Log into DC-1** as `labuser`.  
 2. Open **Server Manager** → Click **Manage** → **Add Roles and Features**.  
+  <p>
+  <img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/a5641bdebf964ac72aa5c5c26157704130eae205/active_directory-install.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+  </p>
+
 3. Install **Active Directory Domain Services (AD DS)**.  
+  <p>
+  <img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/a5641bdebf964ac72aa5c5c26157704130eae205/active_directory_install_2.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+  </p>
 4. **Promote DC-1** as a Domain Controller:
+   <p>
+    <img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/a5641bdebf964ac72aa5c5c26157704130eae205/promote_DC1_to_Domain_controller.png" height="30%" width="30%"   alt="Disk Sanitization Steps"/>
+   </p>
    - Set up a **new forest**: `mydomain.com` (choose your own domain name).  
-5. Restart DC-1 and **log back in** as:  
+    <p>
+  <img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/a5641bdebf964ac72aa5c5c26157704130eae205/set_up_new_forest.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+  </p>
+6. Restart DC-1 and **log back in** as:  
 mydomain.com\labuser
 
-markdown
-Copy
-Edit
+<p>
+  <img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/a5641bdebf964ac72aa5c5c26157704130eae205/log_back_in_as_mydomain.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+  </p>
 </details>
 
 ---
