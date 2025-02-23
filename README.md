@@ -54,7 +54,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 1. **Log into DC-1** as `labuser`.  
 2. Open **Server Manager** → Click **Manage** → **Add Roles and Features**.  
   <p>
-  <img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/a5641bdebf964ac72aa5c5c26157704130eae205/active_directory-install.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/Drew-Stokes/On-premises-Active-Directory-Deployed-in-the-Cloud-Azure-/blob/3ed7c0b49a7fa0d4996b76b21af856c9520f492a/server_manager.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
   </p>
 
 3. Install **Active Directory Domain Services (AD DS)**.  
